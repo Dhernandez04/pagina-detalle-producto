@@ -64,7 +64,7 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   
 }
 .grid {
@@ -203,4 +203,149 @@ input {
   display: flex;
   gap: 20px;
   width: 35%;
+}
+.show{
+display: block !important;
+}
+.preview-box{
+  position: absolute;
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+
+  align-items: center;
+}
+
+.details{
+  display: flex;
+  justify-content: flex-end;
+  right: 10px;
+  position: absolute;
+  
+}
+.close{
+  cursor: pointer;
+}
+.preview__content{
+ width: 50%;
+ height: 450px;
+ position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+ background: white;
+
+}
+
+.img__box{
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.nav__brand_mobile,.menu__toggle{
+  display: none;
+}
+.flex{
+  display: none;
+}
+.nav__item__link:hover{
+  color: var(--color-primary);
+}
+@media (max-width:480px) {
+  .flex{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .menu__toggle{
+    display: block;
+  }
+  .nav__brand_mobile{
+    display: block;
+    font-weight: 700;
+  color: black;
+  font-size: 30px;
+
+  font-family: "Kumbh Sans", sans-serif;
+  }
+  .nav__left{
+    display: none;
+  }
+  body{
+    width: 100%;
+
+  }
+  .nav{
+    width: 100%;
+    padding: 0px 20px;
+
+  }
+  .pictures{
+    display: none;
+  }
+  .grid{
+    padding-top: 0px;
+    grid-template-columns: 1fr;
+  }
+  .content__img{
+    width: 100%;
+    
+  }
+  .title{
+    font-size: 38px;
+  }
+  .card{
+    padding: 5px 20px;
+  }
+  .group-buttons{
+    width: 100%;
+    flex-direction: column;
+  }
+  .image__product{
+    justify-content: flex-start;
+  }
+  .group{
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+ 
+  .preview__content{
+    width: 90%;
+  }
+  .btn{
+    padding: 15px;
+  }
+  .img__product{
+    border-radius: 0;
+  }
+  .card__body{
+    width: 100%;
+  }
+  .w-70{
+    width: 100%;
+  }
+  .nav__left>.nav__item{
+    margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav__brand{
+    display: block;
+    text-align: center;
+  }
+  .nav__left{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+   top: 80px;
+   left: 0;
+    flex-direction: column;
+    z-index: 9999;
+    background: white;
+  }
 }

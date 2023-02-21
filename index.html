@@ -17,9 +17,14 @@
 </head>
 <body>
 <nav class="nav">
+  <div class="flex">
+    <iconify-icon icon="material-symbols:menu" width="30" height="30" class="menu__toggle"></iconify-icon>
+    <a href="" class="nav__brand_mobile">sneaker</a>
+  </div>
+
   <div class="nav__left">
     <a href="" class="nav__brand">sneaker</a>
-    <ul class="nav__item">
+    <ul class="nav__item" id="links">
       <a class="nav__item__link"href=""> Collections</a>
       <a class="nav__item__link"href=""> Men</a>
       <a class="nav__item__link"href=""> Women</a>
@@ -44,10 +49,10 @@
       </figure>
       <div class="pictures">
         <figure class="content__img">
-          <img src="./images/image-product-1.jpg" class="img__product__mini active" alt="" >
-          <img src="./images/image-product-1.jpg" class="img__product__mini" alt="">
-          <img src="./images/image-product-1.jpg" class="img__product__mini" alt="">
-          <img src="./images/image-product-1.jpg" class="img__product__mini" alt="">
+          <img src="./images/image-product-1.jpg"  class="img__product__mini active" alt="" >
+          <img src="./images/image-product-2.jpg"  class="img__product__mini" alt="">
+          <img src="./images/image-product-3.jpg"  class="img__product__mini" alt="">
+          <img src="./images/image-product-4.jpg"  class="img__product__mini" alt="">
         </figure>
       </div>
     </div>
@@ -91,11 +96,24 @@
   </div>
   
 </div>
+<div class="preview-box">
+  <div class="preview__content">
+    <div class="details">
+      <iconify-icon icon="material-symbols:close-sharp" class="close"></iconify-icon>
+    </div>
+    <div class="image-box">
+      <img src="" alt="" class="img__box">
 
+    </div>
+  </div>
   
+</div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Deimer Hernandez</a>.
   </div>
+  <script src="./js/app.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> -->
 </body>
 </html>
