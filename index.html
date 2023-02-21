@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👝 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav__left">
+    <a href="" class="nav__brand">sneaker</a>
+    <ul class="nav__item">
+      <a class="nav__item__link"href=""> Collections</a>
+      <a class="nav__item__link"href=""> Men</a>
+      <a class="nav__item__link"href=""> Women</a>
+      <a class="nav__item__link"href=""> About</a>
+      <a class="nav__item__link"href=""> Contact</a>
+    </ul>
+  </div>
+ 
+    <ul class="nav__item">
+      <iconify-icon class="icono" icon="material-symbols:shopping-cart-outline-rounded"></iconify-icon>
+      <img  class="img" src="./images/image-avatar.png" alt="./images/image-avatar.png">
+    </ul>
+    
+</nav>
+
+<div class="container">
+  <hr class="line">
+  <div class="grid">
+    <div class="image__product">
+      <figure class="content__img">
+        <img src="./images/image-product-1.jpg" class="img__product" alt="">
+      </figure>
+      <div class="pictures">
+        <figure class="content__img">
+          <img src="./images/image-product-1.jpg" class="img__product__mini active" alt="" >
+          <img src="./images/image-product-1.jpg" class="img__product__mini" alt="">
+          <img src="./images/image-product-1.jpg" class="img__product__mini" alt="">
+          <img src="./images/image-product-1.jpg" class="img__product__mini" alt="">
+        </figure>
+      </div>
+    </div>
+    <!-- DETALLES DEL PRODUCTO -->
+    <div class="card">
+      <div class="card-title">
+        <h3 class="subtitle">Sneaker Company</h3>
+        <h1 class="title">Fall Limited Edition Sneakers</h1>
+      </div>
+      <div class="card__body">
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="prices">
+          <p class="price__item">
+            <span class="price">$125.00</span>
+            <span class="ofert"> 50%</span>
+            
+          </p>
+          <p class="discount">$250.00</p>
+          
+        </div>
+        <div class="group-buttons">
+          <div class="group">
+            <button class="btn btn-default">-</button>
+            <input type="text" value="0">
+            <button class="btn btn-default">+</button>
+          </div>
+          
+          <button class="btn btn-primary w-70">
+            <iconify-icon icon="material-symbols:shopping-cart-outline-rounded" class="icono"></iconify-icon>
+           <span>
+            Add to cart
+           </span> 
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Deimer Hernandez</a>.
+  </div>
+</body>
+</html>
